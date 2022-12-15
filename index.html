@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to my Portfolio 1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img
+            class="image-home"
+            src="images/mountain-sun-solid.png"
+            height="27px"
+            width="32px"
+            alt="Home button"
+        /></a>
+        <ul class="desktop-navigation" id="desktop-navigation">
+          <li><a href="index.html" class="active-link">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <div class="mobile-nav-parent">
+          <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+          <strong class="fa-solid fa-bars" id="mobile-navigation-btn"></strong>
+          <div id="mobile-menu" class="mobile-menu">
+            <div class="results">
+              <label class="search-label" for="search-input">Search</label>
+              <input
+                type="text"
+                id="search-input"
+                name="search-input"
+                placeholder="Type here..."
+              />
+            </div>
+            <ul id="displayed-results"></ul>
+            <ul class="mobile-menu-list">
+              <li><a href="index.html" class="active-link">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Portfolio 1</h1>
+      <div class="card-container">
+        <div class="card">
+          <h2>Cross-Course Project</h2>
+          <p>
+            We were tasked to make a website for a jacket store. The website
+            fetches products from a headless CMS using Wordpress API
+          </p>
+          <a
+            href="https://github.com/Noroff-FEU-Assignments/cross-course-project-fof002"
+            >GitHub repository</a
+          >
+          <a href="https://beautiful-banoffee-8f3585.netlify.app/index.html"
+            >Website</a
+          >
+          <img
+            src="../img/Screenshot_2022-12-15_at_16-16-05_Rainy_Days_-_Premium_Rain_Jackets_1_70.png"
+            alt="Image of project"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-follow">
+        <div class="footer-header">Check out</div>
+        <ul>
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="logo-container">
+        <div>&copy 2022</div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
