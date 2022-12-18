@@ -7,56 +7,39 @@
     <meta name="description" content="Welcome to my Portfolio 1" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f568442570.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html"
-          ><img
-            class="image-home"
-            src="images/mountain-sun-solid.png"
-            height="27px"
-            width="32px"
-            alt="Home button"
-        /></a>
-        <ul class="desktop-navigation" id="desktop-navigation">
-          <li><a href="index.html" class="active-link">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-        <div class="mobile-nav-parent">
-          <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
-          <strong class="fa-solid fa-bars" id="mobile-navigation-btn"></strong>
-          <div id="mobile-menu" class="mobile-menu">
-            <div class="results">
-              <label class="search-label" for="search-input">Search</label>
-              <input
-                type="text"
-                id="search-input"
-                name="search-input"
-                placeholder="Type here..."
-              />
-            </div>
-            <ul id="displayed-results"></ul>
-            <ul class="mobile-menu-list">
-              <li><a href="index.html" class="active-link">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">contact</a></li>
-            </ul>
+    <header></header>
+    <main>
+      <div class="background-container">
+        <div class="left-side">
+          <h1>Portfolio 1</h1>
+          <div style="font-style: italic">
+            - Projects Made First Year At Noroff
+          </div>
+          <div id="projects" class="see-projects">
+            <div>See Projects</div>
+            <i class="fa-solid fa-angles-down"></i>
           </div>
         </div>
-      </nav>
-    </header>
-    <main>
-      <h1>Portfolio 1</h1>
+        <div class="background-image"></div>
+      </div>
       <div class="card-container">
         <div class="card">
           <h2>Cross-Course Project</h2>
           <p>
             We were tasked to make a website for a jacket store. The website
-            fetches products from a headless CMS using Wordpress API
+            fetches products from a headless CMS using Wordpress API.
           </p>
           <a
             href="https://github.com/Noroff-FEU-Assignments/cross-course-project-fof002"
@@ -69,6 +52,34 @@
             src="../img/Screenshot_2022-12-15_at_16-16-05_Rainy_Days_-_Premium_Rain_Jackets_1_70.png"
             alt="Image of project"
           />
+        </div>
+        <div class="card">
+          <h2>Semester Project</h2>
+          <p>
+            For the semester project i made a website for a fictive community
+            science museum. Made with pure CSS and HTML
+          </p>
+          <a href="https://github.com/fof002/semesterproject"
+            >GitHub repository</a
+          >
+          <a href="https://lighthearted-sawine-58361d.netlify.app/">Website</a>
+          <img src="../img/semester_50.png" alt="Image of project" />
+        </div>
+        <div class="card">
+          <h2>Project Exam 1</h2>
+          <p>
+            A fictive blog about hiking in the mouintains. We were required to
+            use Wordpress as a headless CMS and fetched posts from wordpress
+            API.
+          </p>
+          <a
+            href="https://github.com/Noroff-FEU-Assignments/project-exam-1-fof002"
+            >GitHub repository</a
+          >
+          <a href="https://coruscating-lolly-7b4d24.netlify.app/index.html"
+            >Website</a
+          >
+          <img src="../img/project_50.png" alt="Image of project" />
         </div>
       </div>
     </main>
@@ -85,7 +96,6 @@
         <div>&copy 2022</div>
       </div>
     </footer>
-    <script src="js/nav.js"></script>
-    <script type="module" src="js/index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
